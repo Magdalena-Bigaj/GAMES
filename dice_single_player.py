@@ -40,10 +40,11 @@ lower_section_sum = 0
 total_sum = 0
 scores = []
 on_the_table = {}
-round_number = 7
+round_number = 1
 roll = 1
 category = ''
-print("\n\n\n* * * *WELCOME TO YAHTZEE GAME * * * * ")
+print("\n\n\n* * * *WELCOME TO YAHTZEE GA"
+      "ME * * * * ")
 while round_number < 14:
     while roll < 4:
         input(f"\n\n*** Round {round_number}, roll {roll}: Press ENTER to roll a dice !\n")
@@ -60,6 +61,7 @@ while round_number < 14:
         else:
 
             roll_again = [0]
+
             for d in roll_again:
                 if d not in dice and roll_again != [0]:
                     roll_again = list(map(int, input(
